@@ -54,14 +54,14 @@ public class MainActivity extends AppCompatActivity   {
         setContentView(R.layout.activity_main);
         mAuth = FirebaseAuth.getInstance();
 
-        mNavItems.add(new NavItem("Home","Meet Up destination",R.drawable.ic_action_home));
-        mNavItems.add(new NavItem("Tekno","Teknoloji ürünleri",R.drawable.ic_action_home));
-        mNavItems.add(new NavItem("Giyim","Meet Up destination",R.drawable.ic_action_home));
-        mNavItems.add(new NavItem("Yeme İçne","Meet Up destination",R.drawable.ic_action_home));
-        mNavItems.add(new NavItem("Mobile Paket","Meet Up destination",R.drawable.ic_action_home));
+        mNavItems.add(new NavItem("Home","Meet Up destination",R.drawable.ic_home_main));
+        mNavItems.add(new NavItem("Teknoloji","Teknoloji ürünleri",R.drawable.ic_television));
+        mNavItems.add(new NavItem("Giyim","Giyim Kuşam Ürümleri",R.drawable.ic_women_dress));
+        mNavItems.add(new NavItem("Yeme İçne","Karnınızı doyurabileceğiniz mekanlar",R.drawable.ic_yeme_icme));
+        mNavItems.add(new NavItem("Mobile Paket","Aradığınız mobile paketler",R.drawable.ic_mobile));
 
-        mNavItems.add(new NavItem("Preferences","Change Your Preferences",R.drawable.ic_settings));
-        mNavItems.add(new NavItem("About","Get to know about us", R.drawable.ic_info));
+        mNavItems.add(new NavItem("Konaklama","Bu gün nerde kalabilirsiniz",R.drawable.ic_konaklama));
+        mNavItems.add(new NavItem("Çıkış","Yine Bekleriz", R.drawable.ic_exit_to_app));
 
 
         //DrawerLayout

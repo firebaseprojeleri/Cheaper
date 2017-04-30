@@ -2,14 +2,17 @@ package com.complaint.kimyonsal.cheapernew.Fragments;
 
 import android.app.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.complaint.kimyonsal.cheapernew.Activitiler.Detaylar;
 import com.complaint.kimyonsal.cheapernew.BaseAdapter.CustomLayoutAdapter;
 import com.complaint.kimyonsal.cheapernew.Models.PostModel;
 import com.complaint.kimyonsal.cheapernew.R;
@@ -42,6 +45,25 @@ public class GiyimKusam  extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View vi = inflater.inflate(R.layout.fragment_giyim, container, false);
         lv = (ListView) vi.findViewById(R.id.listGiyim);
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Bundle bundle = new Bundle();
+                String icerik = dataPost.get(position).postIcerik;
+                String baslik = dataPost.get(position).postIsim;
+                String fiyat = dataPost.get(position).postUrunFiyat;
+                String magaza = dataPost.get(position).postUrunMarka;
+
+                bundle.putString("icerik", icerik);
+                bundle.putString("baslik", baslik);
+                bundle.putString("fiyat", fiyat);
+                bundle.putString("magaza", magaza);
+                Intent i = new Intent(getActivity(), Detaylar.class);
+                i.putExtras(bundle);
+                startActivity(i);
+
+            }
+        });
 
       //  MainActivity.fab.show();
 

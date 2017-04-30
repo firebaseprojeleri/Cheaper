@@ -3,14 +3,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
     <!-- main  content view-->
 
     <RelativeLayout
         android:id="@+id/mainContent"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:background="@drawable/blured"/>
 
     <!--The navigation drawer -->
     <RelativeLayout
@@ -23,7 +25,7 @@
             android:id="@+id/profileBox"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:background="@color/material_blue_500"
+            android:background="#1afbc2"
             android:padding="8dp">
 
             <ImageView

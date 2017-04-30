@@ -7,6 +7,7 @@
     android:orientation="vertical"
     android:padding="30dp"
     android:weightSum="1"
+    android:background="@drawable/blured"
     >
 
     <ImageView
@@ -61,7 +62,7 @@
         android:gravity="center"
         android:onClick="registerRedirecting"
         android:text="Kayıt ol"
-        android:textColor="?android:attr/colorPrimaryDark"
+        android:textColor="@color/whiteText"
         android:textSize="18sp"
         android:layout_alignParentBottom="true"
         android:layout_toStartOf="@+id/tvResetPassword"
@@ -100,8 +101,8 @@
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="34dp"
         android:onClick="sifremi_unuttum"
-        android:text="şifremi unuttum ?"
-        android:textColor="?android:attr/colorPrimaryDark"
+        android:text="Şifremi unuttum ?"
+        android:textColor="@color/whiteText"
         android:textSize="18sp" />
 
 </RelativeLayout>

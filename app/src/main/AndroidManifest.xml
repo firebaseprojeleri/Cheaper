@@ -28,7 +28,7 @@
 
         </activity>
          <activity android:name=".Authentication.LoginActivity"></activity>
-        <activity android:name=".Fragments.OneriGonder"></activity>
+        <activity android:name=".Activitiler.Detaylar"></activity>
         <activity android:name=".Authentication.ResetPassword"></activity>
 
     </application>

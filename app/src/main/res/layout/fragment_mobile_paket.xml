@@ -4,12 +4,6 @@
     android:layout_height="match_parent"
     android:background="@color/cardview_light_background">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Mobile Paket" />
-
     <ListView
         android:id="@+id/listMobile"
         android:layout_width="match_parent"

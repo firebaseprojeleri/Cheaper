@@ -2,6 +2,7 @@ package com.complaint.kimyonsal.cheapernew.Fragments;
 
 import android.app.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
@@ -10,8 +11,10 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.complaint.kimyonsal.cheapernew.Activitiler.Detaylar;
 import com.complaint.kimyonsal.cheapernew.BaseAdapter.CustomLayoutAdapter;
 import com.complaint.kimyonsal.cheapernew.Models.PostModel;
 import com.complaint.kimyonsal.cheapernew.R;
@@ -43,8 +46,27 @@ public class HomeFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_preferences, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
         lv = (ListView) view.findViewById(R.id.mainMenuList);
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Bundle bundle = new Bundle();
+                String icerik = dataPost.get(position).postIcerik;
+                String baslik = dataPost.get(position).postIsim;
+                String fiyat = dataPost.get(position).postUrunFiyat;
+                String magaza = dataPost.get(position).postUrunMarka;
+
+                bundle.putString("icerik", icerik);
+                bundle.putString("baslik", baslik);
+                bundle.putString("fiyat", fiyat);
+                bundle.putString("magaza", magaza);
+                Intent i = new Intent(getActivity(), Detaylar.class);
+                i.putExtras(bundle);
+                startActivity(i);
+
+            }
+        });
         fab = (FloatingActionButton) view.findViewById(R.id.floatingActionButton);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
