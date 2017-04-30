@@ -19,7 +19,7 @@
             android:windowSoftInputMode="stateHidden"/>
 
 
-        <activity android:name=".Activitiler.MainActivity">
+        <activity android:name=".Activitiler.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,9 +27,10 @@
             </intent-filter>
 
         </activity>
-         <activity android:name=".Authentication.LoginActivity"></activity>
+         <activity android:name=".Activitiler.MainActivity"></activity>
         <activity android:name=".Activitiler.Detaylar"></activity>
         <activity android:name=".Authentication.ResetPassword"></activity>
+        <activity android:name=".Authentication.LoginActivity"></activity>
 
     </application>
 

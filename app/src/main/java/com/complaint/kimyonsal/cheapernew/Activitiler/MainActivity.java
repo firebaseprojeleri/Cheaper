@@ -4,6 +4,7 @@ package com.complaint.kimyonsal.cheapernew.Activitiler;
 
 
 
+import android.content.Intent;
 import android.os.Bundle;
 
 
@@ -18,8 +19,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 
+import com.complaint.kimyonsal.cheapernew.Authentication.LoginActivity;
 import com.complaint.kimyonsal.cheapernew.Fragments.GiyimKusam;
 import com.complaint.kimyonsal.cheapernew.Fragments.MobilePaket;
 import com.complaint.kimyonsal.cheapernew.Fragments.HomeFragment;
@@ -136,7 +139,16 @@ public class MainActivity extends AppCompatActivity   {
             setTitle(mNavItems.get(position).mTitle);
         }else if(position==5){
 
+        } else if(position==6){
+            mAuth = FirebaseAuth.getInstance();
+            mAuth.signOut();
+            startActivity(new Intent(getApplicationContext(), LoginActivity.classm));
+
+
+            Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+
         }
+
 
 
 
