@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:weightSum="1"
+    >
+
+    <ImageView
+        android:id="@+id/imgLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/unnamed" />
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLogin"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittextregister"
+        android:gravity="center"
+        android:hint="kullanıcı adı"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/etUserName"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittextregister"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="parola"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etPassword"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/etPassword"
+        android:background="@drawable/sekilbuton"
+        android:onClick="loginMailPassword"
+        android:text="Giriş yap"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:onClick="registerRedirecting"
+        android:text="Kayıt ol"
+        android:textColor="?android:attr/colorPrimaryDark"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/tvResetPassword"
+        android:layout_marginEnd="29dp" />
+
+
+    <Button
+        android:id="@+id/fblogin_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/facebookButton"
+        android:text="Facebook ile Giriş Yap"
+        android:textColor="#fff"
+        android:layout_marginTop="11dp"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_below="@+id/btnLogin"
+        android:layout_alignParentStart="true" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fblogin_button"
+        android:layout_marginTop="15dp"
+        android:layout_weight="0.5"
+        android:textSize="18sp" >
+
+    </com.google.android.gms.common.SignInButton>
+
+    <TextView
+        android:id="@+id/tvResetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="34dp"
+        android:onClick="sifremi_unuttum"
+        android:text="şifremi unuttum ?"
+        android:textColor="?android:attr/colorPrimaryDark"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="1"
+    >
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/like_button_1"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/spinner"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/spinner"
+            android:layout_gravity="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="Kategori Seçiniz : " />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/imageView4"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="9dp"
+            android:spinnerMode="dialog" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/edtOneriBaslik"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+
+        android:background="@drawable/like_button_1"
+        android:gravity="center"
+        android:hint="alışverişinize isim verin"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/etMagaza"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/urunMarka"
+        android:layout_marginBottom="15dp"
+        android:layout_toEndOf="@+id/urunFiyat"
+        android:background="@drawable/like_button_1"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Mağaza ismini alsak olurmu :)"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtOneriIcerik"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtOneriBaslik"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/like_button_1"
+        android:gravity="center"
+        android:hint="neler aldın anlatsana biraz ;)"
+        android:inputType="textMultiLine"
+        android:layout_weight="0.36" />
+
+    <EditText
+        android:id="@+id/urunFiyat"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/karaktersizBox"
+        android:layout_marginBottom="15dp"
+        android:layout_toStartOf="@+id/urunMarka"
+        android:background="@drawable/like_button_1"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Ne kadar odedin ? ORN:5TL"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnKombinle"
+        android:layout_width="86dp"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/add_combine"
+        android:gravity="center" />
+
+
+</LinearLayout>

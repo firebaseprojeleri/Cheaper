@@ -1,0 +1,187 @@
+{
+  "project_info": {
+    "project_number": "381594860167",
+    "firebase_url": "https://cheaper-92474.firebaseio.com",
+    "project_id": "cheaper-92474",
+    "storage_bucket": "cheaper-92474.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381594860167:android:ac1c7a5177a3f6e1",
+        "android_client_info": {
+          "package_name": "com.complaint.kimyonsal.cheaper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381594860167-0r4hgv4un6mlghkl493egu6ib7kdrk8f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.complaint.kimyonsal.cheaper",
+            "certificate_hash": "9f92e2c346fe69a2be3ffedc7a44f2e0d2f938b6"
+          }
+        },
+        {
+          "client_id": "381594860167-q8p8620po7315kn9o7co8poqldt9v2g9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1GP3ECoRjZW-Tc1vQ8hDQp7u-6t9KIWE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381594860167-q8p8620po7315kn9o7co8poqldt9v2g9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381594860167:android:5a180f07d63ca246",
+        "android_client_info": {
+          "package_name": "com.complaint.kimyonsal.gelecegiyazanlarsunum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381594860167-dl7aj1dd679fesq85i83as7cutiva7m4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.complaint.kimyonsal.gelecegiyazanlarsunum",
+            "certificate_hash": "9f92e2c346fe69a2be3ffedc7a44f2e0d2f938b6"
+          }
+        },
+        {
+          "client_id": "381594860167-q8p8620po7315kn9o7co8poqldt9v2g9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1GP3ECoRjZW-Tc1vQ8hDQp7u-6t9KIWE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381594860167-q8p8620po7315kn9o7co8poqldt9v2g9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381594860167:android:31d768badc756976",
+        "android_client_info": {
+          "package_name": "com.murat.resim_atma_cekme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381594860167-6kjq1qdohcma3hrnfgfkoa6ev9u9sjh2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.murat.resim_atma_cekme",
+            "certificate_hash": "3d76ef6ce87cbc446ed311007eb9f30ae4baecd3"
+          }
+        },
+        {
+          "client_id": "381594860167-q8p8620po7315kn9o7co8poqldt9v2g9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1GP3ECoRjZW-Tc1vQ8hDQp7u-6t9KIWE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381594860167-q8p8620po7315kn9o7co8poqldt9v2g9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381594860167:android:c3930c5e1d12b717",
+        "android_client_info": {
+          "package_name": "com.complaint.kimyonsal.cheapernew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381594860167-c4b9qn12fgv2j49g0f1hqpjs5nbv4p0v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.complaint.kimyonsal.cheapernew",
+            "certificate_hash": "9f92e2c346fe69a2be3ffedc7a44f2e0d2f938b6"
+          }
+        },
+        {
+          "client_id": "381594860167-q8p8620po7315kn9o7co8poqldt9v2g9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1GP3ECoRjZW-Tc1vQ8hDQp7u-6t9KIWE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381594860167-q8p8620po7315kn9o7co8poqldt9v2g9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
